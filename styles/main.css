@@ -6,7 +6,6 @@
 body {
     font-family: Verdana, aria, Tahoma, sans-serif;
     font-size: 1.1rem;
-
 }
 div.top-section {
     background-color: #3c3c3c;
@@ -27,12 +26,98 @@ div.menus a{
 div.menus a:hover, .menus a.active-menu {
     color: orange;
     background-color: white;
-    border-radius: 100vh;
+    /*border-radius: 100vh;*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 30px; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
 }
 .menus a.active-menu{
     background-color: orange;
     color: white;
 }
-h1,h3{
+h1{
     color : darkorange;
 }
+p.tag{
+    color: #516acf;
+}
+code {
+    background-color: #fde4e4;
+    color:indianred;
+    padding: 6px 7px;
+    border-radius: 6px;
+}
+div.main-content-section{
+    
+    background-color:#dbdbdb;
+    min-height: 350px
+}
+div.content{
+    background-color: #ffffff;
+    width: 75%;
+    height:100%;
+    margin : 0 auto;
+    padding: 20px 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.mt-10px{
+     margin-top: 10px !important;
+ }
+.mt-20px{
+    margin-top: 20px !important;
+}
+.mt-30px{
+    margin-top: 30px !important;
+}
+.mb-10px{
+     margin-bottom: 10px !important;
+ }
+.mb-20px{
+      margin-bottom: 20px !important ;
+  }
+.mb-30px{
+    margin-bottom: 30px !important;
+}
+
+div.calculator {
+    width:400px;
+    height:600px;
+    background-color: #f5dc9a;
+    padding:0.89rem 1rem;
+    font-family: "Roboto Slab", sans-serif;
+}
+.calculator h2 {
+    color: #ea7a3d;
+    
+}
+.anim-slide-in{
+    animation-name : slide-in-top;
+    animation-duration: 2500ms;
+    animation-timing-function : ease-in-out;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slide-in-top {
+    0% {
+        opacity: 0;
+        background-color: #ea7a3d;
+        transform: translateY(-100%);
+    }
+    70%{
+        opacity: 1;
+        transform: scale(2.1);
+    }
+    100%{
+        border-radius: 30px;
+        transform: scale(1);
+        opacity: 1;
+        background-color: white;
+        border:2px solid rgba(133, 132, 132, 0.42);
+    }
+}
+
