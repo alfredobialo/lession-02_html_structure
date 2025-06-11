@@ -87,7 +87,7 @@ div.calculator {
     height:600px;
     background-color: #f5dc9a;
     padding:0.89rem 1rem;
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Roboto Slab",Verdana, arial, sans-serif;
 }
 .calculator h2 {
     color: #ea7a3d;
