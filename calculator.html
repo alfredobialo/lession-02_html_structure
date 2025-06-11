@@ -11,33 +11,106 @@
             height: 100dvh;
             display: grid;
             place-content: center;
+            box-sizing: border-box;
         }
-       
-       
+        
+        .btn{
+            width:80px;
+            height:80px;
+            background-color: #a6e0fa;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.6rem;
+            margin-right: 7px;
+            box-shadow: 0 0 7px  gray;
+            cursor: pointer;
+            transition: all 500ms linear;
+            
+            
+        }
+        .btn:hover:not(.btn-equal),.btn:focus:not(.btn-equal){
+            background-color: #1e406a;
+            color : whitesmoke;
+            transform: scale(1.2) /*rotate(360deg)*/;
+        }
+        .btn-op{
+            background-color: #cf7418;
+            color: white;
+        }
+        .btn-equal{
+            background-color: #cf7418;
+            color: white;
+            width:100%;
+            height:60px;
+            border: none;
+            border-radius:unset;
+            margin-top: 15px;
+        }
+        .btn-container{
+            margin-bottom: 15px;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .lcd{
+            background-color: black;
+            color: #4270e1;
+            text-align: right;
+            padding: 10px 6px ;
+            border-radius: 10px;
+            margin: 20px 10px ;
+            font-size: 2.5rem;
+        }
+        .calculator{
+            border-radius: 10px;
+        }
+
     </style>
 </head>
 <body>
 
-<div class="calculator anim-slide-in">
-    <h2>Calculator</h2>
-    <div>
-        <button class="btn btn-num">1</button>
-        <button class="btn btn-num">2</button>
-        <button class="btn btn-num">3</button>
-        <button class="btn btn-num">4</button>
-        <button class="btn btn-num">5</button>
-        <button class="btn btn-num">6</button>
-        <button class="btn btn-num">7</button>
-        <button class="btn btn-num">8</button>
-        <button class="btn btn-num">9</button>
-        <button class="btn btn-op">/</button>
-        <button class="btn btn-op">x</button>
-        <button class="btn btn-op">-</button>
-        <button class="btn btn-op">+</button>
-        <button class="btn btn-op">=</button>
+<div class="calculator anim-slide-in____">
+    <h2 class="lcd">0.</h2>
+    <div class="main-container">
+        <div class="btn-container">
+            <button class="btn btn-op">+/-</button>
+            <button class="btn btn-num">0</button>
+            <button class="btn btn-op">.</button>
+            <button class="btn btn-op">+</button>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-num">1</button>
+            <button class="btn btn-num">2</button>
+            <button class="btn btn-num">3</button>
+            <button class="btn btn-op">-</button>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-num">4</button>
+            <button class="btn btn-num">5</button>
+            <button class="btn btn-num">6</button>
+            <button class="btn btn-op">x</button>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-num">7</button>
+            <button class="btn btn-num">8</button>
+            <button class="btn btn-num">9</button>
+            <button class="btn btn-op">/</button>
+        </div>
+
+        
+
     </div>
+  <div class="btn-container">
+      <button class="btn btn-op btn-equal">=</button> 
+  </div>
+ 
+
 </div>
 
-    
+
 </body>
 </html>
